@@ -4008,6 +4008,8 @@ with pkgs;
 
   ios-webkit-debug-proxy = callPackage ../development/mobile/ios-webkit-debug-proxy { };
 
+  weblate = callPackage ../servers/web-apps/weblate { };
+
   xcodeenv = callPackage ../development/mobile/xcodeenv { };
 
   xcodes = swiftPackages.callPackage ../development/tools/xcodes {

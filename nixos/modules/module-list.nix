@@ -1454,7 +1454,6 @@
   ./services/web-apps/tt-rss.nix
   ./services/web-apps/vikunja.nix
   ./services/web-apps/weblate.nix
-  ./services/web-apps/wiki-js.nix
   ./services/web-apps/whitebophir.nix
   ./services/web-apps/wiki-js.nix
   ./services/web-apps/windmill.nix

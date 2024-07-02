@@ -75,11 +75,6 @@
     harfbuzz
   ];
 
-  nativeBuildInputs = [
-    wrapGAppsNoGuiHook
-    gobject-introspection
-  ];
-
   meta = with lib; {
     description = "Web based translation tool with tight version control integration";
     homepage = https://weblate.org/;

@@ -41,7 +41,7 @@ python3.pkgs.buildPythonApplication rec {
     celery
     certifi
     charset-normalizer
-    # crispy-bootstrap3
+    crispy-bootstrap3
     cryptography
     cssselect
     cython

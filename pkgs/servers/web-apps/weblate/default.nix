@@ -41,7 +41,7 @@ python3.pkgs.buildPythonApplication rec {
     celery
     certifi
     charset-normalizer
-    crispy-bootstrap3
+    django-crispy-bootstrap3
     cryptography
     cssselect
     cython
@@ -73,7 +73,7 @@ python3.pkgs.buildPythonApplication rec {
     pycairo
     pygments
     pygobject3
-    # pyicumessageformat
+    pyicumessageformat
     pyparsing
     python-dateutil
     (python-redis-lock.override { withDjango = true; })
@@ -82,15 +82,15 @@ python3.pkgs.buildPythonApplication rec {
     requests
     ruamel-yaml
     sentry-sdk
-    # siphashc
+    siphashc
     social-auth-app-django
     social-auth-core
     tesserocr
     translate-toolkit
-    # translation-finder
+    translation-finder
     user-agents
-    # weblate-language-data
-    # weblate-schemas
+    weblate-language-data
+    weblate-schemas
   ] ++ django.optional-dependencies.argon2
     ++ celery.optional-dependencies.redis;
 

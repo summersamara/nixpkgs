@@ -36,9 +36,9 @@ python3.pkgs.buildPythonApplication rec {
 
   dependencies = with python3.pkgs; [
     aeidon
-    # ahocorasick-rs
+    ahocorasick-rs
     borgbackup
-    celery # [redis]
+    celery
     certifi
     charset-normalizer
     # crispy-bootstrap3
@@ -91,7 +91,8 @@ python3.pkgs.buildPythonApplication rec {
     user-agents
     # weblate-language-data
     # weblate-schemas
-  ] ++ django.optional-dependencies.argon2;
+  ] ++ django.optional-dependencies.argon2
+    ++ celery.optional-dependencies.redis;
 
   meta = with lib; {
     description = "Web based translation tool with tight version control integration";

@@ -17085,6 +17085,8 @@ self: super: with self; {
 
   webhelpers = callPackage ../development/python-modules/webhelpers { };
 
+  weblate-language-data = callPackage ../development/python-modules/weblate-language-data { };
+
   webob = callPackage ../development/python-modules/webob { };
 
   weboob = callPackage ../development/python-modules/weboob { };

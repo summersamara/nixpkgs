@@ -16,6 +16,10 @@ buildPythonPackage rec {
     hash = "sha256-a1C+j4Zo0DJ9BWDn5Zsu4zAftcUixfPktAWdqiFJpiU=";
   };
 
+  patches = [
+    ./fix_tests.patch
+  ];
+
   dependencies = [
     charset-normalizer
     ruamel-yaml
